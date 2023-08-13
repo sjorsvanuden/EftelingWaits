@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0267DC092A88EEE7001F9E77 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0267DC082A88EEE7001F9E77 /* ComplicationController.swift */; };
 		02E618F52A88BD3A0096100F /* EftelingWaits Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 02E618F42A88BD3A0096100F /* EftelingWaits Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		02E618FA2A88BD3A0096100F /* EftelingWaitsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E618F92A88BD3A0096100F /* EftelingWaitsApp.swift */; };
 		02E618FC2A88BD3A0096100F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E618FB2A88BD3A0096100F /* ContentView.swift */; };
@@ -43,7 +42,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0267DC082A88EEE7001F9E77 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		02E618EE2A88BD3A0096100F /* EftelingWaits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EftelingWaits.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02E618F42A88BD3A0096100F /* EftelingWaits Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EftelingWaits Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		02E618F92A88BD3A0096100F /* EftelingWaitsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EftelingWaitsApp.swift; sourceTree = "<group>"; };
@@ -86,7 +84,6 @@
 		02E618E72A88BD3A0096100F = {
 			isa = PBXGroup;
 			children = (
-				0267DC082A88EEE7001F9E77 /* ComplicationController.swift */,
 				02E618F82A88BD3A0096100F /* EftelingWaits Watch App */,
 				02E618EF2A88BD3A0096100F /* Products */,
 			);
@@ -233,7 +230,6 @@
 				02E618FC2A88BD3A0096100F /* ContentView.swift in Sources */,
 				02E6190D2A88BD7F0096100F /* Queue.swift in Sources */,
 				02E618FA2A88BD3A0096100F /* EftelingWaitsApp.swift in Sources */,
-				0267DC092A88EEE7001F9E77 /* ComplicationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
