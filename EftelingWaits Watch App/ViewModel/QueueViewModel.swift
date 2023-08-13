@@ -7,8 +7,9 @@
 
 import Foundation
 
-class QueueViewModel: ObservableObject{
+class QueueViewModel: ObservableObject {
     @Published var rides: [Rides] = []
+    let url: String = "https://queue-times.com/nl/parks/160/queue_times.json"
 
     var timer: Timer?
     init(){
@@ -16,9 +17,8 @@ class QueueViewModel: ObservableObject{
     }
     
     func getQueues(){
-        print("going")
         rides = []
-        let url = URL(string: "https://queue-times.com/nl/parks/160/queue_times.json")!
+        let url = URL(string: url)!
         var request = URLRequest(url: url)
         request.httpMethod = "GET" //set http method as POST
         let session = URLSession(configuration: URLSessionConfiguration.default)
@@ -27,7 +27,6 @@ class QueueViewModel: ObservableObject{
 
                 let jsonDecoder = JSONDecoder()
                 do {
-                    print("gelukt decoding")
                     let parsedJSON = try jsonDecoder.decode(Welcome.self, from: data)
                     for land in parsedJSON.lands {
                         for ride in land.rides{

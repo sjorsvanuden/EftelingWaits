@@ -51,8 +51,8 @@
 		02E618FD2A88BD3B0096100F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02E619002A88BD3B0096100F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		02E6190C2A88BD7F0096100F /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
-		02E6190E2A88BDDE0096100F /* QueueViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QueueViewModel.swift; path = "EftelingWaits Watch App/QueueViewModel.swift"; sourceTree = SOURCE_ROOT; };
-		02E619102A88CEBB0096100F /* RideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RideView.swift; path = "EftelingWaits Watch App/RideView.swift"; sourceTree = SOURCE_ROOT; };
+		02E6190E2A88BDDE0096100F /* QueueViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QueueViewModel.swift; path = "EftelingWaits Watch App/ViewModel/QueueViewModel.swift"; sourceTree = SOURCE_ROOT; };
+		02E619102A88CEBB0096100F /* RideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RideView.swift; path = "EftelingWaits Watch App/View/RideView.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +66,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02C783FF2A895EBD0027051A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				02E6190E2A88BDDE0096100F /* QueueViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		02C784002A895ED10027051A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				02E618FB2A88BD3A0096100F /* ContentView.swift */,
+				02E619102A88CEBB0096100F /* RideView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		02E618E72A88BD3A0096100F = {
 			isa = PBXGroup;
 			children = (
@@ -87,9 +104,10 @@
 		02E618F82A88BD3A0096100F /* EftelingWaits Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				02C784002A895ED10027051A /* View */,
+				02C783FF2A895EBD0027051A /* ViewModel */,
 				02E6190B2A88BD5F0096100F /* Model */,
 				02E618F92A88BD3A0096100F /* EftelingWaitsApp.swift */,
-				02E618FB2A88BD3A0096100F /* ContentView.swift */,
 				02E618FD2A88BD3B0096100F /* Assets.xcassets */,
 				02E618FF2A88BD3B0096100F /* Preview Content */,
 			);
@@ -108,8 +126,6 @@
 			isa = PBXGroup;
 			children = (
 				02E6190C2A88BD7F0096100F /* Queue.swift */,
-				02E6190E2A88BDDE0096100F /* QueueViewModel.swift */,
-				02E619102A88CEBB0096100F /* RideView.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
