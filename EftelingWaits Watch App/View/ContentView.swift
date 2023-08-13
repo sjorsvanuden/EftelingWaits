@@ -22,15 +22,14 @@ struct ContentView: View {
                         Text(ride.name)
                         Text(String(ride.waitTime))
                     }
-                }//.onDisappear(perform: {refresh()})
-                //.onAppear(perform: {refresh()})
+                }
             }
         }
     }
-    }
+}
 
-    struct ContentView_Previews: PreviewProvider {
-        static var previews: some View {
-            ContentView()
-        }
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
     }
+}
